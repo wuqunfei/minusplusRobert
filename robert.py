@@ -27,6 +27,7 @@ class Core:
         while answer < 0 or answer >= 20:
             answer, title = self.generate_operation()
         print(random.choice(self.colors) + title)
+        input_value = None
         try:
             input_value = int(input())
         except Exception as ex:
